@@ -1,27 +1,7 @@
 import 'dart:ffi';
 import 'package:flutter/material.dart';
-import 'package:my_app/components/grid.dart';
+import 'package:my_app/apps/frist_app.dart';
+import 'package:my_app/apps/second_app.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-
-  static final showGrid = true; // Set to false to show ListView
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter layout demo',
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter layout demo'),
-        ),
-        body: Center(
-          child: GridExam(
-            showGrid: false,
-          ),
-        )
-      )
-    );
-  }
-}
+//void main() => runApp(FirstApp());
+void main() => runApp(SecondApp());
